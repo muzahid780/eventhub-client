@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌍 EventHub - Social Development Events Platform
 
 ## 📌 Live Site URL
@@ -69,3 +70,8 @@
 git clone https://github.com/yourusername/eventhub-client.git
 cd eventhub-client
 ```
+=======
+# eventhub-client
+ Social Development Events Platform - Client Side
+>>>>>>> bc4ec8d1b490c55438070f5d1b7a7711db45e3a9
+# eventhub-clients
