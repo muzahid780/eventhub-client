@@ -168,7 +168,7 @@ export const useUpdateEvent = () => {
     setError(null);
     try {
       const data = await eventApi.updateEvent(eventId, eventData);
-      toast.success("Event updated successfully! ✅");
+      toast.success("Event updated successfully! ");
       return data;
     } catch (error) {
       setError(error.message);
