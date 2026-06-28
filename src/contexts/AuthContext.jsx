@@ -84,7 +84,7 @@ export const AuthProvider = ({ children }) => {
       const token = await result.user.getIdToken();
       setAuthToken(token);
 
-      toast.success("Account created successfully! 🎉");
+      toast.success("Account created successfully! ");
       toast.info("Please verify your email. Verification link sent!");
 
       return result.user;
@@ -111,7 +111,7 @@ export const AuthProvider = ({ children }) => {
       const token = await result.user.getIdToken();
       setAuthToken(token);
 
-      toast.success(`Welcome back, ${result.user.displayName || "User"}! 👋`);
+      toast.success(`Welcome back, ${result.user.displayName || "User"}! `);
       return result.user;
     } catch (error) {
       setError(error.message);
@@ -127,7 +127,7 @@ export const AuthProvider = ({ children }) => {
       const result = await signInWithPopup(auth, googleProvider);
       const token = await result.user.getIdToken();
       setAuthToken(token);
-      toast.success(`Welcome, ${result.user.displayName}! 🎉`);
+      toast.success(`Welcome, ${result.user.displayName}! `);
       return result.user;
     } catch (error) {
       setError(error.message);
@@ -143,7 +143,7 @@ export const AuthProvider = ({ children }) => {
       const result = await signInWithPopup(auth, githubProvider);
       const token = await result.user.getIdToken();
       setAuthToken(token);
-      toast.success(`Welcome, ${result.user.displayName}! 🎉`);
+      toast.success(`Welcome, ${result.user.displayName}! `);
       return result.user;
     } catch (error) {
       setError(error.message);
