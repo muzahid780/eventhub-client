@@ -61,7 +61,7 @@ const ManageEvents = () => {
 
   const handleDelete = async (eventId) => {
     try {
-      // API call will go here
+      // API call
       await new Promise((resolve) => setTimeout(resolve, 500));
       setEvents(events.filter((event) => event._id !== eventId));
       toast.success("Event deleted successfully!");
@@ -108,7 +108,6 @@ const ManageEvents = () => {
           animate={{ opacity: 1, scale: 1 }}
           className="text-center py-20 bg-white dark:bg-gray-800 rounded-2xl shadow-lg"
         >
-          <div className="text-6xl mb-4">📝</div>
           <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-2">
             No Events Created Yet
           </h3>
