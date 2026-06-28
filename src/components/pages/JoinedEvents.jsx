@@ -82,7 +82,7 @@ const JoinedEvents = () => {
         className="text-center mb-12"
       >
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
-          My Joined Events 📌
+          My Joined Events
         </h1>
         <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
           Events you have joined and are participating in
@@ -100,7 +100,6 @@ const JoinedEvents = () => {
           animate={{ opacity: 1, scale: 1 }}
           className="text-center py-20 bg-white dark:bg-gray-800 rounded-2xl shadow-lg"
         >
-          <div className="text-6xl mb-4">🤝</div>
           <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-2">
             No Events Joined Yet
           </h3>
