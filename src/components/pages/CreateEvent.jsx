@@ -185,7 +185,7 @@ const CreateEvent = () => {
               disabled={loading}
               className="flex-1 px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition disabled:opacity-50"
             >
-              {loading ? "Creating Event..." : "Create Event 🚀"}
+              {loading ? "Creating Event..." : "Create Event "}
             </button>
             <button
               type="button"
