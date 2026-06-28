@@ -61,7 +61,6 @@ const Login = () => {
         className="max-w-md w-full bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-8 border border-gray-100 dark:border-gray-700"
       >
         <div className="text-center mb-8">
-          <div className="text-5xl mb-3">👋</div>
           <h2 className="text-3xl font-bold text-gray-800 dark:text-white">
             Welcome Back!
           </h2>
