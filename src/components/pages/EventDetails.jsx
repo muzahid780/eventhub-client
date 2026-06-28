@@ -95,7 +95,7 @@ const EventDetails = () => {
     setJoining(true);
     try {
       await new Promise((resolve) => setTimeout(resolve, 1000));
-      toast.success("Successfully joined the event! 🎉");
+      toast.success("Successfully joined the event! ");
       setEvent((prev) => ({ ...prev, participants: prev.participants + 1 }));
     } catch (error) {
       toast.error(error.message || "Failed to join event");
@@ -206,11 +206,11 @@ const EventDetails = () => {
               disabled={joining}
               className="flex-1 px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition disabled:opacity-50 text-lg"
             >
-              {joining ? "Joining..." : "🎯 Join Event"}
+              {joining ? "Joining..." : " Join Event"}
             </button>
             {user?.email === event.organizerEmail && (
               <button className="px-8 py-4 border-2 border-blue-500 text-blue-500 rounded-lg font-semibold hover:bg-blue-500 hover:text-white transition">
-                ✏️ Edit Event
+                Edit Event
               </button>
             )}
           </div>
