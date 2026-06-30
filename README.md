@@ -1,9 +1,10 @@
-<<<<<<< HEAD
-# 🌍 EventHub - Social Development Events Platform
+# 🌍 EventHub - Client Side
 
 ## 📌 Live Site URL
 
 [EventHub Live](https://eventhub.netlify.app)
+
+---
 
 ## 📌 Features
 
@@ -18,60 +19,82 @@
 - ✅ **Toast Notifications** - Error and success messages
 - ✅ **Loading Spinners** - Better user experience
 
+---
+
 ## 🛠️ Technologies Used
 
 ### Frontend
 
-- React 18
-- Vite
-- Tailwind CSS
-- React Router DOM
-- Firebase Authentication
-- Framer Motion
-- React Toastify
-- React Datepicker
-- Axios
+- **React 18** - UI Library
+- **Vite** - Build tool
+- **Tailwind CSS** - Styling
+- **React Router DOM** - Routing
+- **Firebase Authentication** - Google & GitHub Login
+- **Framer Motion** - Animations
+- **React Toastify** - Notifications
+- **React Datepicker** - Date selection
+- **Axios** - API calls
+- **React Icons** - Icons
 
-### Backend
+### Backend (API)
 
-- Node.js
-- Express.js
-- MongoDB
-- JWT Authentication
+- **Node.js** - Runtime
+- **Express.js** - Web framework
+- **MongoDB** - Database
+- **JWT** - Authentication
 
-## 📸 Screenshots
+---
 
-### Home Page
+## 📁 Project Structure
 
-![Home Page](screenshots/home.png)
-
-### Upcoming Events
-
-![Upcoming Events](screenshots/events.png)
-
-### Create Event
-
-![Create Event](screenshots/create.png)
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js (v18+)
-- npm or yarn
-- MongoDB
-- Firebase Account
-
-### Installation
-
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/yourusername/eventhub-client.git
-cd eventhub-client
-```
-=======
-# eventhub-client
- Social Development Events Platform - Client Side
->>>>>>> bc4ec8d1b490c55438070f5d1b7a7711db45e3a9
-# eventhub-clients
+eventhub-client/
+├── src/
+│ ├── api/
+│ │ └── axiosConfig.js
+│ ├── components/
+│ │ ├── common/
+│ │ │ ├── EventCard.jsx
+│ │ │ ├── LoadingSpinner.jsx
+│ │ │ ├── PrivateRoute.jsx
+│ │ │ └── ToastNotifications.jsx
+│ │ ├── pages/
+│ │ │ ├── Home/
+│ │ │ │ ├── Home.jsx
+│ │ │ │ ├── Banner.jsx
+│ │ │ │ ├── Features.jsx
+│ │ │ │ ├── Gallery.jsx
+│ │ │ │ └── Newsletter.jsx
+│ │ │ ├── Login.jsx
+│ │ │ ├── Register.jsx
+│ │ │ ├── UpcomingEvents.jsx
+│ │ │ ├── EventDetails.jsx
+│ │ │ ├── CreateEvent.jsx
+│ │ │ ├── ManageEvents.jsx
+│ │ │ └── JoinedEvents.jsx
+│ │ └── shared/
+│ │ ├── Navbar.jsx
+│ │ └── Footer.jsx
+│ ├── contexts/
+│ │ ├── AuthContext.jsx
+│ │ └── ThemeContext.jsx
+│ ├── firebase/
+│ │ └── firebase.config.js
+│ ├── hooks/
+│ │ ├── useAuth.js
+│ │ ├── useEvents.js
+│ │ └── useTheme.js
+│ ├── utils/
+│ │ └── validation.js
+│ ├── App.jsx
+│ ├── main.jsx
+│ └── index.css
+├── public/
+│ └── images/
+├── .env
+├── .gitignore
+├── index.html
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+├── postcss.config.js
+└── README.md
